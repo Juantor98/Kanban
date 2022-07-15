@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kanban</title>
+        <link rel="stylesheet" href="./styles/bulma.css">
+        <!-- <link rel="stylesheet" href="./styles/debug.css"> -->
+    </head>
+    <body>
+        <section class="hero has-background-white">
+            <div class="columns">
+                <div class="column">
+                    <img src="./images/logo.png" alt="logo" style="max-width: 200px;">
+                </div>
+                <div class="column">
+                    <button class="button is-primary is-rounded" id="btnAddTask" data-target="modalTask" style="float: right; margin-right: 10px; margin-top: 19px;">Add Task</button>  
+                </div> 
+            </div>
+        </section>
+        <section class="section" style="background-color: rgba(199, 159, 252, 0.863); height: 700px;">
+            <div class="container"  style="height: 100%;">
+                <div class="columns"  style="height: 100%;">
+                    <div class="column">
+                        <div class="notification" style="height: 100%;">
+                            <h1 class="subtitle">Por hacer</h1>
+                            <div class="container" id="todoTasks"></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="notification" style="height: 100%;">
+                            <h1 class="subtitle">En progreso</h1>
+                            <div class="container" id="inProgress"></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="notification" style="height: 100%;">
+                            <h1 class="subtitle">Finalizadas</h1>
+                            <div class="container" id="doneTask"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+        <div id="modalTask" class="modal">
+            <div class="modal-background"></div>  
+            <div class="modal-content">  
+                <div class="box">
+                    <div class="container">
+                        <h1 class="subtitle">Crear tarea</h1>
+                        <hr>
+                        <div class="columns">
+                            <div class="column">
+                                <input class="input is-rounded is-small" type="text" id="task" placeholder="Tarea">
+                            </div>
+                            <div class="column">
+                                <input class="input is-rounded is-small" type="text" id="task" placeholder="Responsable">
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>          
+            <button class="modal-close is-large" id="btnCloseModal"></button>
+        </div>          
+        <!-- Fin Modal -->
+        <script src="./index.js"></script>
+    </body>
+</html>
