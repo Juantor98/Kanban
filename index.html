@@ -46,21 +46,33 @@
         <!-- modal -->
         <div id="modalTask" class="modal">
             <div class="modal-background"></div>  
-            <div class="modal-content">  
-                <div class="box">
+            <div class="modal-card">  
+                <div class="modal-card-head">
                     <div class="container">
-                        <h1 class="subtitle">Crear tarea</h1>
-                        <hr>
+                        <h1 class="subtitle">Nueva tarea</h1>
                         <div class="columns">
-                            <div class="column">
+                            <div class="column is-half">
                                 <input class="input is-rounded is-small" type="text" id="task" placeholder="Tarea">
                             </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <input class="input is-rounded is-small" type="text" id="task" placeholder="Descripción">
+                            </div>
+                        </div>
+                        <div class="columns">
                             <div class="column">
                                 <input class="input is-rounded is-small" type="text" id="task" placeholder="Responsable">
                             </div>
+                            <div class="column">
+                                <input class="input is-rounded is-small" type="date" id="task" placeholder="Fecha de entrega">
+                            </div>
                         </div>
                     </div>
-                </div>            
+                </div> 
+                <footer class="modal-card-foot">
+                    <button class="button is-success is-rounded">Guardar</button>
+                </footer>                       
             </div>          
             <button class="modal-close is-large" id="btnCloseModal"></button>
         </div>          
