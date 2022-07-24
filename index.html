@@ -20,25 +20,23 @@
             </div>
         </section>
         <section class="section" style="background-color: rgba(199, 159, 252, 0.863); height: 700px;">
-            <div class="container"  style="height: 100%;">
-                <div class="columns"  style="height: 100%;">
-                    <div class="column">
-                        <div class="notification" style="height: 100%;">
-                            <h1 class="subtitle">Por hacer</h1>
-                            <div class="container" id="todoTasks"></div>
-                        </div>
+            <div class="columns"  style="height: 100%;">
+                <div class="column">
+                    <div class="notification" style="height: 100%;">
+                        <h1 class="subtitle">Por hacer</h1>
+                        <div class="container" id="todoTasks"></div>
                     </div>
-                    <div class="column">
-                        <div class="notification" style="height: 100%;">
-                            <h1 class="subtitle">En progreso</h1>
-                            <div class="container" id="inProgress"></div>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="notification" style="height: 100%;">
+                        <h1 class="subtitle">En progreso</h1>
+                        <div class="container" id="inProgress"></div>
                     </div>
-                    <div class="column">
-                        <div class="notification" style="height: 100%;">
-                            <h1 class="subtitle">Finalizadas</h1>
-                            <div class="container" id="doneTask"></div>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="notification" style="height: 100%;">
+                        <h1 class="subtitle">Finalizadas</h1>
+                        <div class="container" id="doneTask"></div>
                     </div>
                 </div>
             </div>
@@ -61,10 +59,16 @@
                             </div>
                         </div>
                         <div class="columns">
-                            <div class="column">
-                                <input class="input is-rounded is-small" type="text" id="task" placeholder="Responsable">
+                            <div class="column is-one-quarter">                                
+                                <div class="select is-rounded is-small">
+                                    <select>
+                                        <option>Seleccione</option>
+                                        <option>Juan Torres</option>
+                                        <option>Carolina Marín</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <input class="input is-rounded is-small" type="date" id="task" placeholder="Fecha de entrega">
                             </div>
                         </div>
