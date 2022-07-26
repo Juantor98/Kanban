@@ -19,7 +19,7 @@
                 </div> 
             </div>
         </section>
-        <section class="section" style="background-color: rgba(199, 159, 252, 0.863); height: 700px;">
+        <section class="section" style="background-color: rgba(36, 156, 204, 0.863); height: 850px;">
             <div class="columns"  style="height: 100%;">
                 <div class="column">
                     <div class="notification" style="height: 100%;">
@@ -55,27 +55,28 @@
                         </div>
                         <div class="columns">
                             <div class="column">
-                                <input class="input is-rounded is-small" type="text" id="task" placeholder="Descripción">
+                                <input class="input is-rounded is-small" type="text" id="description" placeholder="Descripción">
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column is-one-quarter">                                
                                 <div class="select is-rounded is-small">
-                                    <select>
+                                    <select id="user">
                                         <option>Seleccione</option>
                                         <option>Juan Torres</option>
                                         <option>Carolina Marín</option>
+                                        <option>Ángel Osorno</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="column is-one-quarter">
-                                <input class="input is-rounded is-small" type="date" id="task" placeholder="Fecha de entrega">
+                                <input class="input is-rounded is-small" type="date" id="deadline" placeholder="Fecha de entrega">
                             </div>
                         </div>
                     </div>
                 </div> 
                 <footer class="modal-card-foot">
-                    <button class="button is-success is-rounded">Guardar</button>
+                    <button class="button is-success is-rounded" id="btnSaveTask">Guardar</button>
                 </footer>                       
             </div>          
             <button class="modal-close is-large" id="btnCloseModal"></button>
