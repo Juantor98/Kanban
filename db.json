@@ -6,7 +6,7 @@
             "person": "Juan Torres",
             "details": "Crear vista modal de adición de tareas",
             "state":  "done",
-            "deadline": "01/09/2022"            
+            "deadline": "2022/09/01"            
         },
         {
             "id": 1,
@@ -14,7 +14,7 @@
             "person": "Juan Torres",
             "details": "Crear vista modal de adición de tareas",
             "state":  "done",
-            "deadline": "01/09/2022"            
+            "deadline": "2022/09/01"            
         }
     ]
 }

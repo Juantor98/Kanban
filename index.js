@@ -35,13 +35,13 @@ function closeModal(modalTask) {
 
 function addNewTask() {
     document.getElementById("todoTasks").insertAdjacentHTML('beforeend',
-        '<div class="notification" style="background-color: rgba(36, 156, 204, 0.863);">'+
+        '<article class="notification" style="background-color: rgba(36, 156, 204, 0.863);">'+
             '<h3 class="has-text-left" style="height: 20px;">'+ '<strong>Tarea: </strong>'+ task.value + '</h3>'+
             '<h1 class="has-text-left" style="height: 20px;">'+ '<strong>Descripción: </strong>' + description.value + '</h1>'+
             '<br>'+
             '<h1 class="has-text-left" style="height: 20px;">'+ '<strong>Responsable: </strong>' + user.value + '</h1>'+
             '<h1 class="has-text-left" style="height: 20px;">'+ '<strong>Fecha límite: </strong>' + deadline.value + '</h1>'+
-        '</div>');
+        '</article>');
         
         closeModal(modalTask);
 }
