@@ -5,16 +5,16 @@
             "title": "Adicionar input",
             "person": "Juan Torres",
             "details": "Crear vista modal de adición de tareas",
-            "state":  "todoTasks",
+            "state":  "inProgress",
             "deadline": "2022/09/01"            
         },
         {
             "id": 1,
-            "title": "Adicionar input",
-            "person": "Juan Torres",
-            "details": "Crear vista modal de adición de tareas",
-            "state":  "todoTasks",
-            "deadline": "2022/09/01"            
+            "title": "Adicionar dropdown",
+            "person": "Carolina Marín",
+            "details": "Crear dropdown en modal para adicionar usuario",
+            "state":  "doneTask",
+            "deadline": "2022/10/01"            
         }
     ]
 }
